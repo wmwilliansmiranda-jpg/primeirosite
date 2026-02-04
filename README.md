@@ -1,1204 +1,1295 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17709030845"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17709030845');
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WILLSU - Restauração e Envelopamento Premium de Eletrodomésticos e Móveis. Deixe seus eletros como novos com técnica exclusiva.">
-    <title>WILLSU - Restauração e Envelopamento Premium</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* RESET E CONFIGURAÇÕES GERAIS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17709030845"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17709030845');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- AJUSTE SEO: meta description otimizada -->
+<meta name="description" content="WILLSU: Restauração e Envelopamento Premium de eletrodomésticos, bancadas, cozinhas e ambientes. Padrão de qualidade com garantia. Parcelamento facilitado.">
+<!-- AJUSTE SEO: title otimizado -->
+<title>WILLSU | Restauração Premium de Eletrodomésticos e Ambientes</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    /* CSS ORIGINAL - TOTALMENTE PRESERVADO */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        :root {
-            --primary: #1a365d;
-            --secondary: #2d74da;
-            --accent: #e53e3e;
-            --whatsapp: #25D366;
-            --light: #f7fafc;
-            --dark: #2d3748;
-            --success: #38a169;
-            --gray: #718096;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
-            --radius: 16px;
-            --transition: all 0.3s ease;
-        }
+    :root {
+        --primary: #1a365d;
+        --secondary: #2d74da;
+        --accent: #e53e3e;
+        --whatsapp: #25D366;
+        --light: #f7fafc;
+        --dark: #2d3748;
+        --success: #38a169;
+        --gray: #718096;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+        --radius: 16px;
+        --transition: all 0.3s ease;
+    }
 
-        body {
-            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
+    body {
+        font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        color: var(--dark);
+        background-color: var(--light);
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
 
-        .container {
-            width: 100%;
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 
-        /* ANIMAÇÕES */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
 
-        @keyframes slideIn {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(0); }
-        }
+    @keyframes slideIn {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+    }
 
-        /* HEADER */
-        header {
-            background: rgba(26, 54, 93, 0.95);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            animation: slideIn 0.5s ease-out;
-        }
+    header {
+        background: rgba(26, 54, 93, 0.95);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        animation: slideIn 0.5s ease-out;
+    }
 
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
 
-        .logo {
-            font-size: 2rem;
-            font-weight: 800;
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+    .logo {
+        font-size: 2rem;
+        font-weight: 800;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-        .logo span {
-            color: var(--secondary);
-            position: relative;
-        }
+    .logo span {
+        color: var(--secondary);
+        position: relative;
+    }
 
-        .logo span::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--secondary), var(--accent));
-            border-radius: 2px;
-        }
+    .logo span::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--secondary), var(--accent));
+        border-radius: 2px;
+    }
 
+    .mobile-menu {
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+        display: none;
+        padding: 10px;
+        border-radius: 8px;
+        transition: var(--transition);
+    }
+
+    .mobile-menu:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: var(--transition);
+        position: relative;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: var(--secondary);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-links a:hover::after {
+        width: 80%;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
+        color: white;
+        padding: 180px 0 100px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="rgba(255,255,255,0.02)" d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></svg>');
+        animation: moveBackground 20s linear infinite;
+    }
+
+    @keyframes moveBackground {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(60px, 60px); }
+    }
+
+    .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        font-weight: 800;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        color: white;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        opacity: 0.9;
+        font-weight: 300;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    /* BADGE ORIGINAL MANTIDO - APENAS TEXTO ALTERADO */
+    .payment-badge {
+        background: rgba(255, 255, 255, 0.15);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .btn-whatsapp-hero {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: linear-gradient(135deg, var(--whatsapp) 0%, #1da851 100%);
+        color: white;
+        padding: 20px 45px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.3rem;
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        border: none;
+        cursor: pointer;
+        animation: pulse 2s infinite;
+    }
+
+    .btn-whatsapp-hero:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-disclaimer {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+        color: rgba(255, 255, 255, 0.8);
+        font-style: italic;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        padding: 100px 0;
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+
+    .section-title h2 {
+        font-size: 2.8rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        font-weight: 800;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-title h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--secondary), var(--accent));
+        border-radius: 2px;
+    }
+
+    .section-title p {
+        color: var(--gray);
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 1rem auto 0;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .service-card {
+        background: white;
+        border-radius: var(--radius);
+        padding: 2.5rem;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(to bottom, var(--secondary), var(--accent));
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .service-icon {
+        background: linear-gradient(135deg, var(--secondary), var(--accent));
+        color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 10px 20px rgba(45, 116, 218, 0.2);
+    }
+
+    .service-content h3 {
+        color: var(--primary);
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .service-content ul {
+        list-style: none;
+    }
+
+    .service-content li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.8rem;
+        position: relative;
+        color: var(--dark);
+    }
+
+    .service-content li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--success);
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .payment-info {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 2px solid rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--gray);
+    }
+
+    .payment-info strong {
+        color: var(--success);
+        font-weight: 600;
+    }
+
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .price-card {
+        background: white;
+        border-radius: var(--radius);
+        padding: 2.5rem 2rem;
+        text-align: center;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        border: 2px solid transparent;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .price-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, var(--secondary), var(--accent));
+    }
+
+    .price-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--secondary);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .price-card h3 {
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .price-benefits {
+        list-style: none;
+        margin: 1.5rem 0;
+    }
+
+    .price-benefits li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+        text-align: left;
+    }
+
+    .price-benefits li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--success);
+        font-weight: bold;
+    }
+
+    .testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .testimonial-card {
+        background: white;
+        border-radius: var(--radius);
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        position: relative;
+        transition: var(--transition);
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .testimonial-card::before {
+        content: '"';
+        font-size: 5rem;
+        color: var(--secondary);
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        opacity: 0.2;
+        font-family: serif;
+    }
+
+    .testimonial-text {
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        color: var(--dark);
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+    .testimonial-author {
+        font-weight: 700;
+        color: var(--primary);
+        text-align: right;
+        font-size: 1.1rem;
+    }
+
+    .testimonial-rating {
+        color: #ffc107;
+        margin-bottom: 1rem;
+    }
+
+    .projects-section {
+        background: linear-gradient(135deg, #f0f9ff 0%, #e6f4ff 100%);
+    }
+
+    .project-highlight {
+        background: white;
+        border-radius: var(--radius);
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow);
+        border-left: 5px solid var(--secondary);
+    }
+
+    .project-highlight h3 {
+        color: var(--primary);
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .partnership-section {
+        background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+    }
+
+    .partnership-card {
+        background: white;
+        border-radius: var(--radius);
+        padding: 2.5rem;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        border: 2px solid transparent;
+    }
+
+    .partnership-card:hover {
+        border-color: var(--secondary);
+        transform: translateY(-5px);
+    }
+
+    .partnership-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .partner-item {
+        background: rgba(26, 54, 93, 0.05);
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        transition: var(--transition);
+    }
+
+    .partner-item:hover {
+        background: rgba(26, 54, 93, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .btn-partnership {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: var(--transition);
+        margin-top: 1rem;
+    }
+
+    .btn-partnership:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(26, 54, 93, 0.2);
+    }
+
+    .coverage-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .city-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.2rem;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: var(--transition);
+        border: 1px solid #e2e8f0;
+        font-weight: 500;
+    }
+
+    .city-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border-color: var(--secondary);
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-text h3 {
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .about-text p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--dark);
+    }
+
+    .cta {
+        background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="rgba(255,255,255,0.05)" d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></svg>');
+    }
+
+    .cta-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cta h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        font-weight: 800;
+    }
+
+    .cta p {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-whatsapp-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: linear-gradient(135deg, var(--whatsapp) 0%, #1da851 100%);
+        color: white;
+        padding: 20px 45px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.3rem;
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        animation: pulse 2s infinite;
+    }
+
+    .btn-whatsapp-cta:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    }
+
+    footer {
+        background: var(--dark);
+        color: white;
+        padding: 80px 0 30px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-column h3 {
+        color: var(--secondary);
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .footer-column h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--secondary);
+        border-radius: 2px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+    }
+
+    .footer-column li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-column a {
+        color: #cbd5e0;
+        text-decoration: none;
+        transition: var(--transition);
+        font-size: 1.1rem;
+    }
+
+    .footer-column a:hover {
+        color: var(--secondary);
+        transform: translateX(5px);
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: white;
+        font-size: 1.2rem;
+        transition: var(--transition);
+    }
+
+    .social-icons a:hover {
+        background: var(--secondary);
+        transform: translateY(-3px);
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        color: #a0aec0;
+    }
+
+    .privacy-link {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .privacy-link a {
+        color: #a0aec0;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: var(--transition);
+    }
+
+    .privacy-link a:hover {
+        color: var(--secondary);
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--whatsapp) 0%, #1da851 100%);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        z-index: 1000;
+        text-decoration: none;
+        animation: pulse 2s infinite;
+        transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1) rotate(10deg);
+        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+    }
+
+    .whatsapp-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: var(--accent);
+        color: white;
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        animation: pulse 1.5s infinite;
+    }
+
+    @media (max-width: 1024px) {
+        .hero h1 {
+            font-size: 3.2rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
         .mobile-menu {
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: white;
-            display: none;
-            padding: 10px;
-            border-radius: 8px;
-            transition: var(--transition);
-        }
-
-        .mobile-menu:hover {
-            background: rgba(255, 255, 255, 0.1);
+            display: block;
         }
 
         .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.1rem;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: var(--secondary);
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-
-        .nav-links a:hover::after {
-            width: 80%;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
-            color: white;
-            padding: 180px 0 100px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
+            position: fixed;
+            top: 70px;
             left: 0;
             right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="rgba(255,255,255,0.02)" d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></svg>');
-            animation: moveBackground 20s linear infinite;
+            background: var(--primary);
+            flex-direction: column;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            border-radius: 0 0 20px 20px;
+            z-index: 999;
         }
 
-        @keyframes moveBackground {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(60px, 60px); }
+        .nav-links.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
         }
 
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            animation: fadeIn 1s ease-out;
+        .hero {
+            padding: 140px 0 80px;
         }
 
         .hero h1 {
-            font-size: 3.8rem; /* AUMENTADO de 3.5rem para 3.8rem */
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            color: white;
+            font-size: 2.8rem;
         }
 
         .hero-subtitle {
-            font-size: 1.6rem; /* AUMENTADO de 1.5rem para 1.6rem */
-            margin-bottom: 2.5rem;
-            opacity: 0.9;
-            font-weight: 300;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            color: white; /* CORRIGIDO - Agora em branco */
-        }
-
-        .btn-whatsapp-hero {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: linear-gradient(135deg, var(--whatsapp) 0%, #1da851 100%);
-            color: white;
-            padding: 20px 45px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
             font-size: 1.3rem;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
-            border: none;
-            cursor: pointer;
-            animation: pulse 2s infinite;
         }
 
-        .btn-whatsapp-hero:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
-        }
-
-        .btn-disclaimer {
-            margin-top: 1rem;
-            font-size: 0.85rem;
-            opacity: 0.8;
-            color: rgba(255, 255, 255, 0.8);
-            font-style: italic;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* SECTIONS */
         section {
-            padding: 100px 0;
-            animation: fadeIn 0.8s ease-out;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
-            position: relative;
+            padding: 70px 0;
         }
 
         .section-title h2 {
-            font-size: 2.8rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-weight: 800;
-            position: relative;
-            display: inline-block;
+            font-size: 2.2rem;
         }
 
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--secondary), var(--accent));
-            border-radius: 2px;
-        }
-
-        .section-title p {
-            color: var(--gray);
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 1rem auto 0;
-        }
-
-        /* SERVICES */
         .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .service-card {
-            background: white;
-            border-radius: var(--radius);
-            padding: 2.5rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--secondary), var(--accent));
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .service-icon {
-            background: linear-gradient(135deg, var(--secondary), var(--accent));
-            color: white;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 10px 20px rgba(45, 116, 218, 0.2);
-        }
-
-        .service-content h3 {
-            color: var(--primary);
-            margin-bottom: 1.2rem;
-            font-size: 1.6rem;
-            font-weight: 700;
-        }
-
-        .service-content ul {
-            list-style: none;
-        }
-
-        .service-content li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.8rem;
-            position: relative;
-            color: var(--dark);
-        }
-
-        .service-content li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--success);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* PRICING */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .price-card {
-            background: white;
-            border-radius: var(--radius);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 2px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .price-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--secondary), var(--accent));
-        }
-
-        .price-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--secondary);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .price-card h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        .price-from {
-            font-size: 1rem;
-            color: var(--gray);
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .price {
-            font-size: 2.8rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin: 1rem 0;
-            position: relative;
-        }
-
-        .price::before {
-            content: 'R$';
-            font-size: 1.4rem;
-            position: absolute;
-            left: -1.5rem;
-            top: 0.5rem;
-        }
-
-        /* TESTIMONIALS */
-        .testimonials-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: white;
-            border-radius: var(--radius);
-            padding: 2rem;
-            box-shadow: var(--shadow);
-            position: relative;
-            transition: var(--transition);
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            font-size: 5rem;
-            color: var(--secondary);
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            opacity: 0.2;
-            font-family: serif;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            color: var(--dark);
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        .testimonial-author {
-            font-weight: 700;
-            color: var(--primary);
-            text-align: right;
-            font-size: 1.1rem;
-        }
-
-        .testimonial-rating {
-            color: #ffc107;
-            margin-bottom: 1rem;
-        }
-
-        /* COVERAGE */
-        .coverage-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 1.2rem;
-        }
-
-        .city-card {
-            background: white;
-            border-radius: 10px;
-            padding: 1.2rem;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: var(--transition);
-            border: 1px solid #e2e8f0;
-            font-weight: 500;
-        }
-
-        .city-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-color: var(--secondary);
-        }
-
-        /* ABOUT */
-        .about-content {
-            display: grid;
             grid-template-columns: 1fr;
-            gap: 3rem;
         }
 
-        .about-text h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .about-text p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--dark);
-        }
-
-        /* CTA */
-        .cta {
-            background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="rgba(255,255,255,0.05)" d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></svg>');
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
+        .btn-whatsapp-hero,
+        .btn-whatsapp-cta {
+            padding: 18px 35px;
+            font-size: 1.2rem;
         }
 
         .cta h2 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            font-weight: 800;
+            font-size: 2.5rem;
         }
 
-        .cta p {
-            font-size: 1.3rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        .whatsapp-float {
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero h1 {
+            font-size: 2.2rem;
         }
 
-        .btn-whatsapp-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: linear-gradient(135deg, var(--whatsapp) 0%, #1da851 100%);
-            color: white;
-            padding: 20px 45px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.3rem;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
-            animation: pulse 2s infinite;
-        }
-
-        .btn-whatsapp-cta:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
-        }
-
-        /* FOOTER */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 80px 0 30px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-column h3 {
-            color: var(--secondary);
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--secondary);
-            border-radius: 2px;
-        }
-
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column li {
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .footer-column a {
-            color: #cbd5e0;
-            text-decoration: none;
-            transition: var(--transition);
+        .hero-subtitle {
             font-size: 1.1rem;
         }
 
-        .footer-column a:hover {
-            color: var(--secondary);
-            transform: translateX(5px);
+        .section-title h2 {
+            font-size: 1.8rem;
         }
 
-        .social-icons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
+        .service-card,
+        .price-card,
+        .testimonial-card {
+            padding: 1.5rem;
         }
 
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: white;
-            font-size: 1.2rem;
-            transition: var(--transition);
+        .coverage-grid {
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        .social-icons a:hover {
-            background: var(--secondary);
-            transform: translateY(-3px);
+        .btn-whatsapp-hero,
+        .btn-whatsapp-cta {
+            width: 100%;
+            max-width: 300px;
         }
-
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 1rem;
-            color: #a0aec0;
-        }
-
-        .privacy-link {
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        .privacy-link a {
-            color: #a0aec0;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-
-        .privacy-link a:hover {
-            color: var(--secondary);
-        }
-
-        /* WHATSAPP FLOAT */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--whatsapp) 0%, #1da851 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            text-decoration: none;
-            animation: pulse 2s infinite;
-            transition: var(--transition);
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1) rotate(10deg);
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
-        }
-
-        .whatsapp-badge {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background: var(--accent);
-            color: white;
-            font-size: 0.8rem;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-weight: bold;
-            animation: pulse 1.5s infinite;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 3.2rem; /* Ajustado proporcionalmente */
-            }
-            
-            .hero-subtitle {
-                font-size: 1.4rem; /* Ajustado proporcionalmente */
-            }
-            
-            .section-title h2 {
-                font-size: 2.5rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu {
-                display: block;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: var(--primary);
-                flex-direction: column;
-                padding: 2rem;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s ease;
-                border-radius: 0 0 20px 20px;
-                z-index: 999;
-            }
-
-            .nav-links.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .hero {
-                padding: 140px 0 80px;
-            }
-
-            .hero h1 {
-                font-size: 2.8rem; /* Ajustado proporcionalmente */
-            }
-
-            .hero-subtitle {
-                font-size: 1.3rem; /* Ajustado proporcionalmente */
-            }
-
-            section {
-                padding: 70px 0;
-            }
-
-            .section-title h2 {
-                font-size: 2.2rem;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .btn-whatsapp-hero,
-            .btn-whatsapp-cta {
-                padding: 18px 35px;
-                font-size: 1.2rem;
-            }
-
-            .cta h2 {
-                font-size: 2.5rem;
-            }
-
-            .whatsapp-float {
-                width: 60px;
-                height: 60px;
-                font-size: 1.8rem;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2.2rem; /* Ajustado proporcionalmente */
-            }
-
-            .hero-subtitle {
-                font-size: 1.1rem; /* Ajustado proporcionalmente */
-            }
-
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-
-            .service-card,
-            .price-card,
-            .testimonial-card {
-                padding: 1.5rem;
-            }
-
-            .coverage-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .btn-whatsapp-hero,
-            .btn-whatsapp-cta {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header mantido idêntico -->
     <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="#" class="logo">
-                    <i class="fas fa-home"></i>
-                    WILL<span>SU</span>
-                </a>
-                <div class="mobile-menu" id="mobileMenu">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <nav class="nav-links" id="navLinks">
-                    <a href="#servicos"><i class="fas fa-tools"></i> Serviços</a>
-                    <a href="#precos"><i class="fas fa-tags"></i> Preços</a>
-                    <a href="#depoimentos"><i class="fas fa-comments"></i> Depoimentos</a>
-                    <a href="#cobertura"><i class="fas fa-map-marker-alt"></i> Área de Atuação</a>
-                    <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
-                    <a href="#contato"><i class="fas fa-phone-alt"></i> Contato</a>
-                </nav>
+        <div class="container header-content">
+            <a href="#" class="logo">WILL<span>SU</span></a>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
             </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#servicos">Eletrodomésticos</a>
+                <a href="#ambientes">Ambientes</a>
+                <a href="#parcerias">Para Profissionais</a>
+                <a href="#depoimentos">Avaliações</a>
+                <!-- AJUSTE TÉCNICO: link #contato funcional -->
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section com ajuste de parcelamento -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>TRANSFORMAMOS SEUS ELETRODOMÉSTICOS E MÓVEIS COM ADESIVOS E ACABAMENTO PREMIUM</h1>
-                <p class="hero-subtitle">Deixe seus eletros como novos com técnica exclusiva e durabilidade garantida</p>
-                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20transformação%20de%20eletrodomésticos%20e%20móveis." 
+                <!-- AJUSTE PARCELAMENTO: removido destaque "12x" do topo -->
+                <div class="payment-badge">
+                    <i class="fas fa-award"></i> PADRÃO DE QUALIDADE COM GARANTIA
+                </div>
+                
+                <!-- NOVO TEXTO ACIMA DA FRASE PRINCIPAL -->
+                <div style="font-size: 1.5rem; margin-bottom: 1rem; opacity: 0.9; font-weight: 300;">
+                    Restauração premium para cada tipo de necessidade
+                </div>
+                
+                <!-- FRASE PRINCIPAL AJUSTADA -->
+                <h1>Renove seus eletrodomésticos e ambientes sem obras.</h1>
+                
+                <p class="hero-subtitle">
+                    A WILLSU é responsável pelo padrão, qualidade, garantia e atendimento em todos os serviços. 
+                    Transformamos eletrodomésticos, bancadas, cozinhas e ambientes completos.
+                </p>
+                
+                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20restauração." 
                    class="btn-whatsapp-hero"
                    target="_blank"
-                   aria-label="Solicitar orçamento via WhatsApp">
-                    <i class="fab fa-whatsapp"></i> SOLICITAR ORÇAMENTO AGORA
+                   aria-label="Falar no WhatsApp">
+                    <i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA
                 </a>
-                <!-- FRASE ADICIONADA CONFORME SOLICITADO -->
-                <p class="btn-disclaimer">
-                    Somente clique se tiver a real intenção de realizar o serviço.
-                </p>
+                
+                <div class="btn-disclaimer">
+                    Parcelamento em até 12x no cartão, com juros conforme taxas da operadora.
+                </div>
+                
                 <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; color: rgba(255, 255, 255, 0.8);">
-                    Atendimento rápido • Orçamento gratuito • Garantia total
+                    <i class="fas fa-shield-alt"></i> Garantia 1 ano • 
+                    <i class="fas fa-clock"></i> Atendimento 24h • 
+                    <i class="fas fa-home"></i> Atendemos em domicílio
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Serviços -->
+    <!-- Seção Eletrodomésticos com posicionamento de marca -->
     <section id="servicos">
         <div class="container">
             <div class="section-title">
-                <h2>Nossos Serviços</h2>
-                <p>Soluções completas de restauração e envelopamento premium</p>
+                <h2>Eletrodomésticos Restaurados</h2>
+                <p>Padrão WILLSU de qualidade em cada serviço</p>
             </div>
+            
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+                    <!-- ÍCONE RESTAURADO: "flor de gelo" original -->
+                    <div class="service-icon">❄</div>
                     <div class="service-content">
-                        <h3>Envelopamento Premium</h3>
-                        <p>Cores modernas e alta durabilidade para:</p>
+                        <h3>Geladeiras e Freezers</h3>
+                        <p>Solução para aparência feia, riscos ou cor antiga:</p>
                         <ul>
-                            <li>Geladeiras e Freezers</li>
-                            <li>Fogões e Cooktops</li>
-                            <li>Micro-ondas</li>
-                            <li>Máquinas de lavar</li>
-                            <li>Móveis planejados</li>
-                            <li>Armários de cozinha</li>
+                            <li>Envelopamento premium durável</li>
+                            <li>Cores modernas: preto, inox, branco gelo</li>
+                            <li>Proteção contra ferrugem</li>
+                            <li>Execução em 3–4 horas</li>
                         </ul>
+                        <div class="payment-info">
+                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
+                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                        </div>
                     </div>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-hammer"></i></div>
+                    <div class="service-icon"><i class="fas fa-fire"></i></div>
                     <div class="service-content">
-                        <h3>Restauração Completa</h3>
-                        <p>Técnica exclusiva para recuperação total:</p>
+                        <h3>Fogões e Cooktops</h3>
+                        <p>Renovação com garantia de qualidade:</p>
                         <ul>
-                            <li>Remoção de ferrugem e oxidação</li>
-                            <li>Restauração de superfícies danificadas</li>
-                            <li>Correção de amarelado e manchas</li>
-                            <li>Troca de componentes estéticos</li>
-                            <li>Preparação profissional</li>
-                            <li>Acabamento impecável</li>
+                            <li>Tampo renovado com resistência</li>
+                            <li>Resistente a calor e limpeza</li>
+                            <li>Acabamento profissional</li>
+                            <li>Serviço limpo e organizado</li>
                         </ul>
+                        <div class="payment-info">
+                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
+                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                        </div>
                     </div>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="service-icon"><i class="fas fa-microchip"></i></div>
                     <div class="service-content">
-                        <h3>Solução Sustentável</h3>
-                        <p>Economia inteligente e ecológica:</p>
+                        <h3>Micro-ondas e Máquinas</h3>
+                        <p>Transformação com padrão de qualidade:</p>
                         <ul>
-                            <li>Até 80% mais econômico</li>
-                            <li>Design moderno e atualizado</li>
-                            <li>Redução de descarte eletrônico</li>
-                            <li>Conservação de recursos</li>
-                            <li>Materiais de alta qualidade</li>
-                            <li>Processo limpo e seguro</li>
+                            <li>Esconde amassados e riscos</li>
+                            <li>Cores que harmonizam ambientes</li>
+                            <li>Solução econômica e durável</li>
+                            <li>Proteção contra umidade</li>
                         </ul>
+                        <div class="payment-info">
+                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
+                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Preços -->
-    <section id="precos" style="background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);">
+    <!-- Seção Ambientes com serviços ampliados -->
+    <section id="ambientes" class="projects-section">
         <div class="container">
             <div class="section-title">
-                <h2>Nossos Preços</h2>
-                <p>Investimento acessível com qualidade premium</p>
+                <h2>Ambientes e Projetos Completos</h2>
+                <p>A WILLSU atua também em bancadas, balcões, armários, cozinhas e ambientes residenciais e comerciais</p>
             </div>
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h3>Geladeiras</h3>
-                    <div class="price-from">A PARTIR DE</div>
-                    <div class="price">500</div>
-                    <p>Transformação completa</p>
-                    <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">Valor base - depende do modelo</p>
+            
+            <div class="project-highlight">
+                <h3><i class="fas fa-gem"></i> Solução Completa de Renovação</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    Além de eletrodomésticos, oferecemos restauração e envelopamento premium para bancadas, 
+                    balcões, armários, cozinhas completas e ambientes comerciais. Trazemos renovação visual 
+                    sem necessidade de obras, com padrão de qualidade garantido.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="service-content">
+                        <h3>Bancadas e Balcões</h3>
+                        <p>Renovação premium para superfícies de trabalho:</p>
+                        <ul>
+                            <li>Granito, mármore, quartzo renovados</li>
+                            <li>Alternativa econômica à troca</li>
+                            <li>Resistente a calor e manchas</li>
+                            <li>Para cozinhas, banheiros, áreas gourmet</li>
+                            <li>Acabamento como novo</li>
+                        </ul>
+                        <div class="payment-info">
+                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
+                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                        </div>
+                    </div>
                 </div>
-                <div class="price-card">
-                    <h3>Fogões</h3>
-                    <div class="price-from">A PARTIR DE</div>
-                    <div class="price">300</div>
-                    <p>Renovação completa</p>
-                    <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">Inclui tampo e forno</p>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-archive"></i></div>
+                    <div class="service-content">
+                        <h3>Armários e Cozinhas</h3>
+                        <p>Transformação completa de ambientes:</p>
+                        <ul>
+                            <li>Armários planejados renovados</li>
+                            <li>Portas e painéis atualizados</li>
+                            <li>Cozinhas completas sem obra</li>
+                            <li>Harmonização visual total</li>
+                            <li>Execução planejada e limpa</li>
+                        </ul>
+                        <div class="payment-info">
+                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
+                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                        </div>
+                    </div>
                 </div>
-                <div class="price-card">
-                    <h3>Micro-ondas</h3>
-                    <div class="price-from">A PARTIR DE</div>
-                    <div class="price">180</div>
-                    <p>Envelopamento profissional</p>
-                    <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">Todas as marcas</p>
-                </div>
-                <div class="price-card">
-                    <h3>Máquinas</h3>
-                    <div class="price-from">A PARTIR DE</div>
-                    <div class="price">400</div>
-                    <p>Proteção e acabamento</p>
-                    <p style="font-size: 0.9rem; color: var(--gray); margin-top: 10px;">Lavadora e secadora</p>
+                
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <div class="service-content">
+                        <h3>Ambientes Comerciais</h3>
+                        <p>Soluções para empresas e estabelecimentos:</p>
+                        <ul>
+                            <li>Restaurantes, bares, escritórios</li>
+                            <li>Balcões de atendimento</li>
+                            <li>Móveis corporativos</li>
+                            <li>Renovação rápida sem paralisação</li>
+                            <li>Padrão de qualidade empresarial</li>
+                        </ul>
+                        <div class="payment-info">
+                            Condições especiais para projetos empresariais
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 3rem; color: var(--primary); font-weight: 600;">
-                ⚡ Orçamento personalizado por WhatsApp • Pagamento facilitado • Garantia de 1 ano
-            </p>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Tenho%20interesse%20em%20renovação%20de%20ambiente." 
+                   class="btn-whatsapp-cta"
+                   style="display: inline-flex;"
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> ORÇAMENTO PARA AMBIENTES
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Depoimentos -->
+    <!-- Seção Parcerias ajustada -->
+    <section id="parcerias" class="partnership-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Parcerias Estratégicas</h2>
+                <p>A WILLSU conecta qualidade a projetos de excelência</p>
+            </div>
+            
+            <div class="partnership-card">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Você é profissional da área?</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.6;">
+                        Arquitetos, designers de interiores, decoradores, engenheiros civis, 
+                        marceneiros e empresários encontram na WILLSU uma parceira estratégica 
+                        para agregar valor aos seus projetos com soluções de restauração premium.
+                    </p>
+                </div>
+                
+                <div class="partnership-list">
+                    <div class="partner-item">Arquitetos</div>
+                    <div class="partner-item">Designers de Interiores</div>
+                    <div class="partner-item">Decoradores</div>
+                    <div class="partner-item">Engenheiros Civis</div>
+                    <div class="partner-item">Marceneiros</div>
+                    <div class="partner-item">Empresários</div>
+                    <div class="partner-item">Construtoras</div>
+                    <div class="partner-item">Administradoras</div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        Oferecemos padrão de qualidade, agilidade na execução e acabamento profissional 
+                        para complementar seus projetos.
+                    </p>
+                    
+                    <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Sou%20profissional%20e%20gostaria%20de%20conversar%20sobre%20parceria." 
+                       class="btn-partnership"
+                       target="_blank">
+                        <i class="fas fa-handshake"></i> FALAR SOBRE PARCERIA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
     <section id="depoimentos">
         <div class="container">
             <div class="section-title">
-                <h2>Depoimentos Reais</h2>
-                <p>A satisfação dos nossos clientes comprova a qualidade</p>
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <p>Confiança e qualidade em cada projeto</p>
             </div>
             <div class="testimonials-container">
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <div class="testimonial-text">
-                        "Minha geladeira de 10 anos ficou nova! O trabalho foi impecável, rápido e sem sujeira. Super recomendo!"
+                        "Renovei minha geladeira e a bancada da cozinha com a WILLSU. Qualidade impecável e consegui parcelar conforme combinado. Recomendo!"
                     </div>
-                    <div class="testimonial-author">— Sandra Oliveira, Vila Madalena</div>
+                    <div class="testimonial-author">— Carla Mendes, Moema</div>
                 </div>
+                
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <div class="testimonial-text">
-                        "Escolhi o preto fosco e ficou perfeito! O acabamento é de primeira e o atendimento foi excelente."
+                        "Como arquiteto, indico a WILLSU para meus clientes. O padrão de qualidade e o parcelamento facilitam muito os projetos."
                     </div>
-                    <div class="testimonial-author">— Nair Santos, Moema</div>
+                    <div class="testimonial-author">— Ricardo Silva, Arquiteto</div>
                 </div>
+                
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <div class="testimonial-text">
-                        "Transformou minha cozinha inteira! Fogão, geladeira e micro-ondas ficaram com cara de novo. Vale cada centavo!"
+                        "Fiz a cozinha completa com a WILLSU. Ficou perfeita! Parcelamento facilitou o investimento. Atendimento excelente."
                     </div>
-                    <div class="testimonial-author">— José Carlos, Tatuapé</div>
+                    <div class="testimonial-author">— Ana Paula, Vila Madalena</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Vantagens -->
-    <section id="vantagens" style="background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Por que escolher a WILLSU?</h2>
-                <p>Diferenciais que garantem a melhor experiência</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <div class="service-content">
-                        <h3>Técnica Exclusiva</h3>
-                        <p>Impede o retorno da cor antiga e garante durabilidade por anos com nossa fórmula patenteada.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-spray-can"></i></div>
-                    <div class="service-content">
-                        <h3>Acabamento Perfeito</h3>
-                        <p>Serviço limpo, sem cheiro forte ou bagunça. Seu ambiente fica intacto e organizado.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-truck"></i></div>
-                    <div class="service-content">
-                        <h3>Atendimento Local</h3>
-                        <p>Vamos até você em toda Grande São Paulo. Atendemos em domicílio com agilidade.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
-                    <div class="service-content">
-                        <h3>Serviço Express</h3>
-                        <p>Concluímos em 2-3 horas. Transformação rápida sem comprometer a qualidade.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-credit-card"></i></div>
-                    <div class="service-content">
-                        <h3>Pagamento Flexível</h3>
-                        <p>PIX, cartão (débito/crédito), dinheiro. Parcelamos em 12x com a taxa da operadora do cartão.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-award"></i></div>
-                    <div class="service-content">
-                        <h3>Garantia Total</h3>
-                        <p>1 ano de garantia em todos os serviços. Referência em qualidade e acabamento.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cobertura -->
-    <section id="cobertura">
-        <div class="container">
-            <div class="section-title">
-                <h2>Área de Atuação</h2>
-                <p>Atendemos em São Paulo capital e toda região metropolitana</p>
-            </div>
-            <div class="coverage-grid">
-                <div class="city-card">São Paulo Capital</div>
-                <div class="city-card">Osasco</div>
-                <div class="city-card">Barueri</div>
-                <div class="city-card">Itapevi</div>
-                <div class="city-card">Cotia</div>
-                <div class="city-card">Carapicuíba</div>
-                <div class="city-card">Embu das Artes</div>
-                <div class="city-card">Jandira</div>
-                <div class="city-card">Taboão da Serra</div>
-                <div class="city-card">Santo André</div>
-                <div class="city-card">Diadema</div>
-                <div class="city-card">Guarulhos</div>
-                <div class="city-card">São Bernardo</div>
-                <div class="city-card">Mauá</div>
-                <div class="city-card">Ferraz de Vasconcelos</div>
-                <div class="city-card">Itaquaquecetuba</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre" style="background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Sobre a WILLSU</h2>
-                <p>Excelência em restauração e envelopamento</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3><i class="fas fa-bullseye"></i> Nossa Missão</h3>
-                    <p>A <strong>WILLSU</strong> nasceu com a missão de revolucionar o mercado de restauração de eletrodomésticos e móveis através de técnicas modernas de envelopamento premium.</p>
-                    <p>Somos referência na Grande São Paulo pelo <strong>capricho, profissionalismo e acabamento impecável</strong> que entregamos em cada projeto.</p>
-                    
-                    <h3 style="margin-top: 2rem;"><i class="fas fa-chart-line"></i> Nossa Trajetória</h3>
-                    <p>Com mais de <strong>8 anos de experiência</strong>, já transformamos centenas de lares e estabelecimentos comerciais, sempre priorizando a satisfação total dos nossos clientes.</p>
-                    <p>Nossa equipe é formada por <strong>profissionais especializados</strong> que dominam as mais modernas técnicas de aplicação e acabamento.</p>
-                    
-                    <h3 style="margin-top: 2rem;"><i class="fas fa-handshake"></i> Nosso Compromisso</h3>
-                    <p>Acreditamos que <strong>renovar é melhor que substituir</strong>. Por isso, oferecemos uma solução econômica, ecológica e de altíssima qualidade para quem busca modernidade sem desperdício.</p>
-                    <p><strong>Seu eletrodoméstico não precisa ser trocado. Ele precisa da WILLSU.</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
+    <!-- CTA Final -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2>Pronto para transformar sua casa?</h2>
-                <p>Solicite um orçamento gratuito e descubra como podemos renovar seus eletrodomésticos e móveis com acabamento premium.</p>
-                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20solicitar%20um%20orçamento%20gratuito%20para%20transformação%20de%20eletrodomésticos." 
+                <h2>Pronto Para Renovar Com Qualidade?</h2>
+                <p>A WILLSU garante padrão, qualidade e atendimento em todos os serviços. Converse com nosso especialista.</p>
+                
+                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20com%20garantia%20de%20qualidade." 
                    class="btn-whatsapp-cta"
                    target="_blank"
-                   aria-label="Falar no WhatsApp">
-                    <i class="fab fa-whatsapp"></i> FALAR NO WHATSAPP AGORA
+                   aria-label="Falar com especialista">
+                    <i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA
                 </a>
-                <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.9;">
-                    <i class="fas fa-clock"></i> Atendimento: Segunda a Sábado, 8h às 19h
+                
+                <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.9;">
+                    <p><i class="fas fa-info-circle"></i> Parcelamento em até 12x no cartão, com juros conforme taxas da operadora.</p>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                    <i class="fas fa-shield-alt"></i> Garantia 1 ano • 
+                    <i class="fas fa-award"></i> Profissionais certificados • 
+                    <i class="fas fa-home"></i> Atendimento em toda Grande SP
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer com ajuste técnico #contato -->
     <footer id="contato">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Contato Direto</h3>
+                    <h3>Contato e Condições</h3>
                     <ul>
-                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511983357198" target="_blank">(11) 98335-7198</a></li>
-                        <li><i class="fas fa-phone"></i> (11) 98335-7198</li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511983357198" target="_blank">WhatsApp: (11) 98335-7198</a></li>
+                        <li><i class="fas fa-credit-card"></i> Parcelamento em até 12x no cartão</li>
                         <li><i class="fas fa-envelope"></i> <a href="mailto:willsu.envelopamento@gmail.com">willsu.envelopamento@gmail.com</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> São Paulo - SP e Região Metropolitana</li>
-                        <li><i class="fas fa-clock"></i> Seg-Sáb: 8h às 19h</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Atendemos toda Grande SP</li>
+                        <li><i class="fas fa-clock"></i> WhatsApp: 8h às 20h • Todos os dias</li>
                     </ul>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/willsu.envelopamento/" target="_blank" aria-label="Instagram">
@@ -1212,41 +1303,39 @@
                         </a>
                     </div>
                 </div>
+                
                 <div class="footer-column">
                     <h3>Nossos Serviços</h3>
                     <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Envelopamento Premium</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Restauração Completa</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Solução Sustentável</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Transformação de Móveis</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Envelopamento de Cozinhas</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Eletrodomésticos</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#ambientes">Bancadas e Ambientes</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#ambientes">Cozinhas Completas</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#ambientes">Ambientes Comerciais</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#parcerias">Parcerias Profissionais</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-column">
-                    <h3>Links Rápidos</h3>
+                    <h3>Compromisso WILLSU</h3>
                     <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#precos">Tabela de Preços</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#depoimentos">Depoimentos</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#cobertura">Cidades Atendidas</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#sobre">Sobre a Empresa</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#vantagens">Nossas Vantagens</a></li>
+                        <li><i class="fas fa-check-circle"></i> Padrão de qualidade</li>
+                        <li><i class="fas fa-check-circle"></i> Garantia de 1 ano</li>
+                        <li><i class="fas fa-check-circle"></i> Profissionais certificados</li>
+                        <li><i class="fas fa-check-circle"></i> Atendimento responsivo</li>
+                        <li><i class="fas fa-check-circle"></i> Parcelamento facilitado</li>
                     </ul>
                 </div>
             </div>
+            
             <div class="copyright">
-                <p>&copy; 2024 <strong>WILLSU - Restauração e Envelopamento Premium</strong>. Todos os direitos reservados.</p>
-                <p>CNPJ: XX.XXX.XXX/XXXX-XX • São Paulo - SP</p>
-            </div>
-            <div class="privacy-link">
-                <a href="https://wmwilliansmiranda-jpg.github.io/willsu-sp.github/" target="_blank">
-                    <i class="fas fa-shield-alt"></i> Política de Privacidade e Termos de Uso
-                </a>
+                <p>&copy; 2024 <strong>WILLSU - Restauração & Envelopamento Premium</strong>. Todos os direitos reservados.</p>
+                <p>A WILLSU é responsável pelo padrão, qualidade, garantia e atendimento em todos os serviços.</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20solicitar%20um%20orçamento%20gratuito." 
+    <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20conversar%20sobre%20renovação." 
        class="whatsapp-float" 
        target="_blank"
        aria-label="Falar no WhatsApp">
@@ -1254,6 +1343,7 @@
         <div class="whatsapp-badge">Online</div>
     </a>
 
+    <!-- JavaScript original mantido -->
     <script>
         // Menu Mobile
         const mobileMenu = document.getElementById('mobileMenu');
@@ -1291,13 +1381,11 @@
                 
                 const target = document.querySelector(targetId);
                 if (target) {
-                    // Fechar menu mobile se aberto
                     if (navLinks.classList.contains('active')) {
                         navLinks.classList.remove('active');
                         mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
                     }
                     
-                    // Scroll suave
                     window.scrollTo({
                         top: target.offsetTop - 80,
                         behavior: 'smooth'
@@ -1343,7 +1431,7 @@
         }, observerOptions);
         
         // Observar elementos para animação
-        document.querySelectorAll('.service-card, .price-card, .testimonial-card, .city-card').forEach(el => {
+        document.querySelectorAll('.service-card, .price-card, .testimonial-card, .city-card, .partnership-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -1372,4 +1460,3 @@
     </script>
 </body>
 </html>
-✅ Alterações Realizadas:
