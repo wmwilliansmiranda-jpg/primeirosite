@@ -10,9 +10,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- AJUSTE SEO: meta description otimizada -->
 <meta name="description" content="WILLSU: Restauração e Envelopamento Premium de eletrodomésticos, bancadas, cozinhas e ambientes. Padrão de qualidade com garantia. Parcelamento facilitado.">
-<!-- AJUSTE SEO: title otimizado -->
 <title>WILLSU | Restauração Premium de Eletrodomésticos e Ambientes</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
@@ -222,7 +220,6 @@
         color: white;
     }
 
-    /* BADGE ORIGINAL MANTIDO - APENAS TEXTO ALTERADO */
     .payment-badge {
         background: rgba(255, 255, 255, 0.15);
         border: 2px solid rgba(255, 255, 255, 0.3);
@@ -964,30 +961,28 @@
                 <a href="#ambientes">Ambientes</a>
                 <a href="#parcerias">Para Profissionais</a>
                 <a href="#depoimentos">Avaliações</a>
-                <!-- AJUSTE TÉCNICO: link #contato funcional -->
                 <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section com ajuste de parcelamento -->
+    <!-- Hero Section com ajustes textuais -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <!-- AJUSTE PARCELAMENTO: removido destaque "12x" do topo -->
                 <div class="payment-badge">
                     <i class="fas fa-award"></i> PADRÃO DE QUALIDADE COM GARANTIA
                 </div>
                 
-                <!-- NOVO TEXTO ACIMA DA FRASE PRINCIPAL -->
-                <div style="font-size: 1.5rem; margin-bottom: 1rem; opacity: 0.9; font-weight: 300;">
+                <!-- AJUSTE 1: Texto acima da frase principal -->
+                <p class="hero-subtitle" style="margin-bottom: 1rem;">
                     Restauração premium para cada tipo de necessidade
-                </div>
+                </p>
                 
-                <!-- FRASE PRINCIPAL AJUSTADA -->
+                <!-- AJUSTE 2: Frase principal -->
                 <h1>Renove seus eletrodomésticos e ambientes sem obras.</h1>
                 
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" style="margin-top: 1.5rem;">
                     A WILLSU é responsável pelo padrão, qualidade, garantia e atendimento em todos os serviços. 
                     Transformamos eletrodomésticos, bancadas, cozinhas e ambientes completos.
                 </p>
@@ -1012,7 +1007,7 @@
         </div>
     </section>
 
-    <!-- Seção Eletrodomésticos com posicionamento de marca -->
+    <!-- Seção Eletrodomésticos com ajustes -->
     <section id="servicos">
         <div class="container">
             <div class="section-title">
@@ -1021,9 +1016,10 @@
             </div>
             
             <div class="services-grid">
+                <!-- AJUSTE 3: Card Geladeiras e Freezers -->
                 <div class="service-card">
-                    <!-- ÍCONE RESTAURADO: "flor de gelo" original -->
-                    <div class="service-icon">❄</div>
+                    <!-- AJUSTE 4: Restaurar ícone original -->
+                    <div class="service-icon"><i class="fas fa-snowflake"></i></div>
                     <div class="service-content">
                         <h3>Geladeiras e Freezers</h3>
                         <p>Solução para aparência feia, riscos ou cor antiga:</p>
@@ -1031,10 +1027,10 @@
                             <li>Envelopamento premium durável</li>
                             <li>Cores modernas: preto, inox, branco gelo</li>
                             <li>Proteção contra ferrugem</li>
-                            <li>Execução em 3–4 horas</li>
+                            <li>Execução em 3-4 horas</li>
                         </ul>
+                        <!-- AJUSTE 3: Texto de parcelamento -->
                         <div class="payment-info">
-                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
                             Parcelamos em até 12x • Juros conforme taxas da operadora.
                         </div>
                     </div>
@@ -1052,8 +1048,7 @@
                             <li>Serviço limpo e organizado</li>
                         </ul>
                         <div class="payment-info">
-                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
-                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                            Parcelamento em até 12x no cartão, com juros conforme taxas da operadora.
                         </div>
                     </div>
                 </div>
@@ -1070,8 +1065,7 @@
                             <li>Proteção contra umidade</li>
                         </ul>
                         <div class="payment-info">
-                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
-                            Parcelamos em até 12x • Juros conforme taxas da operadora.
+                            Parcelamento em até 12x no cartão, com juros conforme taxas da operadora.
                         </div>
                     </div>
                 </div>
@@ -1079,7 +1073,7 @@
         </div>
     </section>
 
-    <!-- Seção Ambientes com serviços ampliados -->
+    <!-- Seção Ambientes (mantida) -->
     <section id="ambientes" class="projects-section">
         <div class="container">
             <div class="section-title">
@@ -1090,373 +1084,4 @@
             <div class="project-highlight">
                 <h3><i class="fas fa-gem"></i> Solução Completa de Renovação</h3>
                 <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
-                    Além de eletrodomésticos, oferecemos restauração e envelopamento premium para bancadas, 
-                    balcões, armários, cozinhas completas e ambientes comerciais. Trazemos renovação visual 
-                    sem necessidade de obras, com padrão de qualidade garantido.
-                </p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-utensils"></i></div>
-                    <div class="service-content">
-                        <h3>Bancadas e Balcões</h3>
-                        <p>Renovação premium para superfícies de trabalho:</p>
-                        <ul>
-                            <li>Granito, mármore, quartzo renovados</li>
-                            <li>Alternativa econômica à troca</li>
-                            <li>Resistente a calor e manchas</li>
-                            <li>Para cozinhas, banheiros, áreas gourmet</li>
-                            <li>Acabamento como novo</li>
-                        </ul>
-                        <div class="payment-info">
-                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
-                            Parcelamos em até 12x • Juros conforme taxas da operadora.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-archive"></i></div>
-                    <div class="service-content">
-                        <h3>Armários e Cozinhas</h3>
-                        <p>Transformação completa de ambientes:</p>
-                        <ul>
-                            <li>Armários planejados renovados</li>
-                            <li>Portas e painéis atualizados</li>
-                            <li>Cozinhas completas sem obra</li>
-                            <li>Harmonização visual total</li>
-                            <li>Execução planejada e limpa</li>
-                        </ul>
-                        <div class="payment-info">
-                            <!-- TEXTO DE PARCELAMENTO AJUSTADO -->
-                            Parcelamos em até 12x • Juros conforme taxas da operadora.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-building"></i></div>
-                    <div class="service-content">
-                        <h3>Ambientes Comerciais</h3>
-                        <p>Soluções para empresas e estabelecimentos:</p>
-                        <ul>
-                            <li>Restaurantes, bares, escritórios</li>
-                            <li>Balcões de atendimento</li>
-                            <li>Móveis corporativos</li>
-                            <li>Renovação rápida sem paralisação</li>
-                            <li>Padrão de qualidade empresarial</li>
-                        </ul>
-                        <div class="payment-info">
-                            Condições especiais para projetos empresariais
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Tenho%20interesse%20em%20renovação%20de%20ambiente." 
-                   class="btn-whatsapp-cta"
-                   style="display: inline-flex;"
-                   target="_blank">
-                    <i class="fab fa-whatsapp"></i> ORÇAMENTO PARA AMBIENTES
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Parcerias ajustada -->
-    <section id="parcerias" class="partnership-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Parcerias Estratégicas</h2>
-                <p>A WILLSU conecta qualidade a projetos de excelência</p>
-            </div>
-            
-            <div class="partnership-card">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Você é profissional da área?</h3>
-                    <p style="font-size: 1.2rem; line-height: 1.6;">
-                        Arquitetos, designers de interiores, decoradores, engenheiros civis, 
-                        marceneiros e empresários encontram na WILLSU uma parceira estratégica 
-                        para agregar valor aos seus projetos com soluções de restauração premium.
-                    </p>
-                </div>
-                
-                <div class="partnership-list">
-                    <div class="partner-item">Arquitetos</div>
-                    <div class="partner-item">Designers de Interiores</div>
-                    <div class="partner-item">Decoradores</div>
-                    <div class="partner-item">Engenheiros Civis</div>
-                    <div class="partner-item">Marceneiros</div>
-                    <div class="partner-item">Empresários</div>
-                    <div class="partner-item">Construtoras</div>
-                    <div class="partner-item">Administradoras</div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 2rem;">
-                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-                        Oferecemos padrão de qualidade, agilidade na execução e acabamento profissional 
-                        para complementar seus projetos.
-                    </p>
-                    
-                    <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Sou%20profissional%20e%20gostaria%20de%20conversar%20sobre%20parceria." 
-                       class="btn-partnership"
-                       target="_blank">
-                        <i class="fas fa-handshake"></i> FALAR SOBRE PARCERIA
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Depoimentos -->
-    <section id="depoimentos">
-        <div class="container">
-            <div class="section-title">
-                <h2>O Que Nossos Clientes Dizem</h2>
-                <p>Confiança e qualidade em cada projeto</p>
-            </div>
-            <div class="testimonials-container">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <div class="testimonial-text">
-                        "Renovei minha geladeira e a bancada da cozinha com a WILLSU. Qualidade impecável e consegui parcelar conforme combinado. Recomendo!"
-                    </div>
-                    <div class="testimonial-author">— Carla Mendes, Moema</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <div class="testimonial-text">
-                        "Como arquiteto, indico a WILLSU para meus clientes. O padrão de qualidade e o parcelamento facilitam muito os projetos."
-                    </div>
-                    <div class="testimonial-author">— Ricardo Silva, Arquiteto</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <div class="testimonial-text">
-                        "Fiz a cozinha completa com a WILLSU. Ficou perfeita! Parcelamento facilitou o investimento. Atendimento excelente."
-                    </div>
-                    <div class="testimonial-author">— Ana Paula, Vila Madalena</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Pronto Para Renovar Com Qualidade?</h2>
-                <p>A WILLSU garante padrão, qualidade e atendimento em todos os serviços. Converse com nosso especialista.</p>
-                
-                <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20com%20garantia%20de%20qualidade." 
-                   class="btn-whatsapp-cta"
-                   target="_blank"
-                   aria-label="Falar com especialista">
-                    <i class="fab fa-whatsapp"></i> FALAR COM ESPECIALISTA
-                </a>
-                
-                <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.9;">
-                    <p><i class="fas fa-info-circle"></i> Parcelamento em até 12x no cartão, com juros conforme taxas da operadora.</p>
-                </div>
-                
-                <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
-                    <i class="fas fa-shield-alt"></i> Garantia 1 ano • 
-                    <i class="fas fa-award"></i> Profissionais certificados • 
-                    <i class="fas fa-home"></i> Atendimento em toda Grande SP
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer com ajuste técnico #contato -->
-    <footer id="contato">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Contato e Condições</h3>
-                    <ul>
-                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511983357198" target="_blank">WhatsApp: (11) 98335-7198</a></li>
-                        <li><i class="fas fa-credit-card"></i> Parcelamento em até 12x no cartão</li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:willsu.envelopamento@gmail.com">willsu.envelopamento@gmail.com</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Atendemos toda Grande SP</li>
-                        <li><i class="fas fa-clock"></i> WhatsApp: 8h às 20h • Todos os dias</li>
-                    </ul>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/willsu.envelopamento/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/willsu.envelopamento" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://wa.me/5511983357198" target="_blank" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Nossos Serviços</h3>
-                    <ul>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#servicos">Eletrodomésticos</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#ambientes">Bancadas e Ambientes</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#ambientes">Cozinhas Completas</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#ambientes">Ambientes Comerciais</a></li>
-                        <li><i class="fas fa-chevron-right"></i> <a href="#parcerias">Parcerias Profissionais</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Compromisso WILLSU</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Padrão de qualidade</li>
-                        <li><i class="fas fa-check-circle"></i> Garantia de 1 ano</li>
-                        <li><i class="fas fa-check-circle"></i> Profissionais certificados</li>
-                        <li><i class="fas fa-check-circle"></i> Atendimento responsivo</li>
-                        <li><i class="fas fa-check-circle"></i> Parcelamento facilitado</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2024 <strong>WILLSU - Restauração & Envelopamento Premium</strong>. Todos os direitos reservados.</p>
-                <p>A WILLSU é responsável pelo padrão, qualidade, garantia e atendimento em todos os serviços.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/5511983357198?text=Olá%20WILLSU!%20Gostaria%20de%20conversar%20sobre%20renovação." 
-       class="whatsapp-float" 
-       target="_blank"
-       aria-label="Falar no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-        <div class="whatsapp-badge">Online</div>
-    </a>
-
-    <!-- JavaScript original mantido -->
-    <script>
-        // Menu Mobile
-        const mobileMenu = document.getElementById('mobileMenu');
-        const navLinks = document.getElementById('navLinks');
-        
-        mobileMenu.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            mobileMenu.innerHTML = navLinks.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Fechar menu ao clicar fora
-        document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !mobileMenu.contains(e.target)) {
-                navLinks.classList.remove('active');
-                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
-            }
-        });
-        
-        // Scroll suave melhorado
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const target = document.querySelector(targetId);
-                if (target) {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                        mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
-                    }
-                    
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Adicionar classe active na navegação conforme scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section[id]');
-            const scrollPos = window.scrollY + 100;
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                const sectionId = section.getAttribute('id');
-                
-                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                    document.querySelectorAll('.nav-links a').forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href') === `#${sectionId}`) {
-                            link.classList.add('active');
-                        }
-                    });
-                }
-            });
-        });
-        
-        // Efeito de revelação ao scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-        
-        // Observar elementos para animação
-        document.querySelectorAll('.service-card, .price-card, .testimonial-card, .city-card, .partnership-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-        
-        // WhatsApp Tracking
-        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
-            link.addEventListener('click', function() {
-                gtag('event', 'conversion', {
-                    'send_to': 'AW-17709030845/xxxxx',
-                    'value': 1.0,
-                    'currency': 'BRL'
-                });
-            });
-        });
-        
-        // Loader
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.3s';
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-        });
-    </script>
-</body>
-</html>
+                    Além de eletrodom
